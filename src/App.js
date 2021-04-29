@@ -1,24 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
+import Map from './component/Map';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2lkZGhhcnRoLTEiLCJhIjoiY2tvMmdsZDBzMDFxODJvbXVuNTVpeHNjZiJ9.Hgm2J4nq_2Te8jkCYQlRNA';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Map />
   );
 }
 
